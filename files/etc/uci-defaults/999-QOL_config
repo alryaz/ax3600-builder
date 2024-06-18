@@ -15,7 +15,7 @@ set wireless.default_radio0.proxy_arp='1'
 # Wireless radio0 specific settings
 set wireless.radio0.htmode='HE160'
 set wireless.radio0.channel='44'
-set wireless.radio0.country='US'
+set wireless.radio0.country='PA'
 
 # Wireless default settings for radio1
 set wireless.default_radio1.dtim_period='1'
@@ -28,7 +28,7 @@ set wireless.default_radio1.bss_transition='1'
 set wireless.default_radio1.proxy_arp='1'
 
 # Wireless radio1 specific settings
-set wireless.radio1.country='US'
+set wireless.radio1.country='PA'
 
 # Firewall settings
 set firewall.@defaults[0].flow_offloading='0'
