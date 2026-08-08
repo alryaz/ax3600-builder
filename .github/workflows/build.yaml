@@ -163,9 +163,9 @@ jobs:
           fi
           echo "src-git qosmio https://github.com/qosmio/packages-extra" >> feeds.conf
           echo "src-git sqm_nss https://github.com/JuliusBairaktaris/sqm-scripts-nss" >> feeds.conf
-          echo "src-git amneziawg https://github.com/${AMNEZIAWG_REPOSITORY}" >> feeds.conf
-          echo "src-git-full passwall2 https://github.com/${PASSWALL2_REPOSITORY}" >> feeds.conf
-          echo "src-git-full passwall_pkg https://github.com/${PASSWALL_PKG_REPOSITORY}" >> feeds.conf
+          echo "src-git amneziawg https://github.com/${AMNEZIAWG_REPOSITORY};${AMNEZIAWG_BRANCH}" >> feeds.conf
+          echo "src-git-full passwall2 https://github.com/${PASSWALL2_REPOSITORY};${PASSWALL2_BRANCH}" >> feeds.conf
+          echo "src-git-full passwall_pkg https://github.com/${PASSWALL_PKG_REPOSITORY};${PASSWALL_PKG_BRANCH}" >> feeds.conf
 
           # Update and install feeds
           ./scripts/feeds update -a
